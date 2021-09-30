@@ -2,7 +2,7 @@ import java.util.Scanner;
 	/*
 	 * It includes player1 Information
 	 */
-public abstract class Players {
+public class Players {
 	
 	Hacker hacker;
 	SecurityDeveloper securityDV;

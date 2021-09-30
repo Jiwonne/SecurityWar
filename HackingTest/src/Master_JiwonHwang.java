@@ -36,8 +36,8 @@ abstract public class Master_JiwonHwang {
 		System.out.println("YES = 65454 | NO = 15687");
 		System.out.println(" * * * WARNING : ONLY A VALID NUMBER ACCEPTED * * *");
 		
-		int answer = userInput.nextInt();
-//		int answer = players.playerInput.nextInt();
+//		int answer = userInput.nextInt();
+		int answer = players.playerInput.nextInt();
 		if(answer == getYES()) {
 			return true;
 		} else if(answer == getNO()) {

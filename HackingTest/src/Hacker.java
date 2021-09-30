@@ -10,6 +10,8 @@ public class Hacker extends  Master_JiwonHwang {
 	 */
 	private static String name;
 	private String email;
+	
+	public Hacker() {};
 
 	/*
 	 * Overloaded constructor with Hacker(Player1) Info
@@ -28,16 +30,16 @@ public class Hacker extends  Master_JiwonHwang {
 	 */
 	public String getID() {return id;}
 	
-	private void setID(String id) {this.id = id;}
+	protected void setID(String id) {this.id = id;}
 	
 	// it will be called in SecurityDeveloper's class.
 	public static String getName() {return name;}
 	
-	private void setName(String name) {this.name = name;}
+	protected void setName(String name) {this.name = name;}
 	
 	public String getEmail() {return email;}
 	
-	private void setEmail(String email) {this.email = email;}
+	protected void setEmail(String email) {this.email = email;}
 
 	@Override
 	public void gameMission() {

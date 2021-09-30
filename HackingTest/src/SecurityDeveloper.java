@@ -10,6 +10,8 @@ public class SecurityDeveloper extends Master_JiwonHwang {
 	private static String name;
 	private String email;
 	
+	public SecurityDeveloper() {};
+	
 	/*
 	 * Overloaded constructor with SecurityDeveloper(Player2) Info
 	 */
@@ -27,16 +29,16 @@ public class SecurityDeveloper extends Master_JiwonHwang {
 	
 	public String getID() {return id;}
 	
-	private void setID(String id) {this.id = id;}
+	protected void setID(String id) {this.id = id;}
 	
 	// it will be used in Hacker's class.
 	public static String getName() {return name;}
 	
-	private void setName(String name) {this.name = name;}
+	protected void setName(String name) {this.name = name;}
 	
 	public String getEmail() {return email;}
 	
-	private void setEmail(String email) {this.email = email;}
+	protected void setEmail(String email) {this.email = email;}
 	
 	// Here, I wanna run Beginning, Intermediate, Advanced Interface
 	
