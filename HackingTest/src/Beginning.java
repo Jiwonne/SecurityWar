@@ -5,5 +5,6 @@
  * The security developer should try their best to protect user's information from the hacker.
  */
 interface Beginning {
+	
 
 }
