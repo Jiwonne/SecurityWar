@@ -6,11 +6,6 @@ public class User {
 	// The purpose of this game is to figure it out.
 	private String password;
 	private String email;
-	
-	/*
-	 * Java convention: getter and then setter
-	 */
-	
 	public String getID() {return id;}
 	
 	private void setID(String id) {this.id = id;}

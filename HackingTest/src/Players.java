@@ -4,8 +4,8 @@ import java.util.Scanner;
 	 */
 public class Players {
 	
-	Hacker hacker;
-	SecurityDeveloper securityDV;
+	Hacker hacker = new Hacker();
+	SecurityDeveloper securityDV = new SecurityDeveloper();
 	
 	Scanner playerInput = new Scanner(System.in);
 	

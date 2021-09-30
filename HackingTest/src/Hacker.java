@@ -2,7 +2,7 @@
 /*
  * I have to find a way to send an email to each player
  */
-public class Hacker extends  Master_JiwonHwang {
+public class Hacker implements GameRules {
 	
 	private String id;	
 	/*
@@ -11,7 +11,11 @@ public class Hacker extends  Master_JiwonHwang {
 	private static String name;
 	private String email;
 	
-	public Hacker() {};
+	public Hacker() {
+		setID("464546");
+		setName("Hacker1");
+		setEmail(this.name + "@SecurityWar.com");
+	};
 
 	/*
 	 * Overloaded constructor with Hacker(Player1) Info
@@ -37,16 +41,31 @@ public class Hacker extends  Master_JiwonHwang {
 	
 	protected void setName(String name) {this.name = name;}
 	
-	public String getEmail() {return email;}
+	public String getEmail() {
+		if(this.email.equalsIgnoreCase("NO")) {
+			return getName() + "@SecurityWar.com@SecurityWar.com";
+		} return email;
+	}
 	
 	protected void setEmail(String email) {this.email = email;}
 
 	@Override
-	public void gameMission() {
-		System.out.println("I'm proud of" + getName());
-		System.out.println(getName() + " are our junior black hacker to invade the user's privacy.");
+	public boolean gameProcessed(String name) {
+		name = getName();
+		System.out.println("I'm proud of" + name);
+		System.out.println(name + " are our junior black hacker to invade the user's privacy.");
 		System.out.println("The game will be processed at 3 levels | Beginning, Intermediate, Advanced");
-		System.out.println("It's time for " + getName() + " to show how professional you are.");
+		System.out.println("It's time for " + name + " to show how professional you are.");
+		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return 
+				"---------- Hacker(Player1)    Information ----------" + "\n" +
+				"Hacker's name > " + getName() + "\n"+
+				"Hacker's ID > " + getID() + "\n" +
+				"Hacker's email > " + getEmail();		
 	}
 	
 	// Here, I wanna run Beginning, Intermediate, Advanced Interface
