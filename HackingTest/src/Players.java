@@ -41,7 +41,7 @@ public class Players {
 		hacker.setID(playerInput.nextLine());
 		System.out.print("What's your name? ");
 		hacker.setName(playerInput.nextLine());;
-		System.out.print("Enter your email address (if you dont, say \"no\") ");
+		System.out.print("Enter your email address (if you dont want to write your email, say \"no\") ");
 		hacker.setEmail(playerInput.nextLine());
 		
 		System.out.println("---------- Developer(Player2) Information ----------");
@@ -49,7 +49,7 @@ public class Players {
 		securityDV.setID(playerInput.nextLine());
 		System.out.print("What's your name? ");
 		securityDV.setName(playerInput.nextLine());
-		System.out.print("Enter your email address (if you dont, say \"no\") ");
+		System.out.print("Enter your email address (if you dont want to write your email, say \"no\") ");
 		securityDV.setEmail(playerInput.nextLine());
 		System.out.println();
 		System.out.println(hacker.toString());
