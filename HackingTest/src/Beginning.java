@@ -6,10 +6,17 @@
  */
 interface Beginning {
 	
-	void questionFormat(String question, String NO1, String NO2, String NO3, String NO4, String answer);
+	void questionFormat(String question, String NO1, String NO2, String NO3, String NO4);
 	
-	boolean networkCommunication(String answer); // host
-	boolean networkMedia(String answer); // fiber optic cable
-	boolean intermediaryDevices(String answer); // routers, switches
+	boolean networkCommunication(); // host
+	boolean networkMedia(); // fiber optic cable
+	boolean intermediaryDevices(); // routers, switches
+	
+	boolean networkConnection(); // NIC
+	boolean specializedPort(); // Interface
+	/*
+	 * Bonus time : explaining a basic concept
+	 */
+	boolean networkTopology(); // logical topology and physical topology
 
 }

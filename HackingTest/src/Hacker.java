@@ -43,7 +43,7 @@ public class Hacker implements GameRules {
 	
 	public String getEmail() {
 		if(this.email.equalsIgnoreCase("NO")) {
-			return getName() + "@SecurityWar.com@SecurityWar.com";
+			return getName() + "@SecurityWar.com";
 		} return email;
 	}
 	
