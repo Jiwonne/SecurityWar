@@ -10,6 +10,14 @@ public class HackerMission implements Beginning, Intermediate, Advanced {
 	private String NO3;
 	private String NO4;
 	
+	public boolean answerFormat(String rightAnswer, String userInput) {
+		
+		if(rightAnswer.equalsIgnoreCase(userInput)) {return true;} 
+		else {
+			System.out.println("Answer is " + rightAnswer);
+			return false;
+		} 
+	}
 
 	@Override
 	public void questionFormat(String question, String NO1, String NO2, String NO3, String NO4) {
@@ -34,11 +42,9 @@ public class HackerMission implements Beginning, Intermediate, Advanced {
 		questionFormat("Which of the following is the name for all computers connected to a network that participate directly in network communication",
 					   "servers", "intermediary devices", "hosts", "media");
 
-		if(NO3.equalsIgnoreCase(userAnswer)) {return true;} 
-		else {
-			System.out.println("Answer is " + NO3);
-			return false;
-		} 
+		if(answerFormat(NO3, userAnswer)) {
+			return true;
+		} return false;
 	}
 	
 	@Override
@@ -105,8 +111,31 @@ public class HackerMission implements Beginning, Intermediate, Advanced {
 		System.out.println("NIC is related to 'Networking device'");
 		
 		return true; 
-
 	}
+	
+//	@Override
+//	public boolean networkInfrastructure1() {
+//		questionFormat("Which network infrastructure provides access to users and end devices in a small geographical area, which is typically a network in a department in an enterprice, a home, or small business",
+//				       "Extranet", "Intranet", "LAN", "WAN");
+//		
+//		if(NO3.equalsIgnoreCase(userAnswer)) {return true;}
+//		else {
+//			System.out.println("Answer is " + NO3);
+//			return false;
+//		}
+//	}
+
+//	@Override
+//	public boolean networkInfrastructure2() {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
+//
+//	@Override
+//	public boolean networkInfrastructure3() {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
 
 	
 }

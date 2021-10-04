@@ -18,5 +18,11 @@ interface Beginning {
 	 * Bonus time : explaining a basic concept
 	 */
 	boolean networkTopology(); // logical topology and physical topology
+	
+//	boolean networkInfrastructure1(); // LAN
+//	boolean networkInfrastructure2(); // Extranet
+//	boolean networkInfrastructure3(); // WAN
+
+	
 
 }
